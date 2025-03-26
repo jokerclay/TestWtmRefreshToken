@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>true</CopyRefAssembliesToPublishDirectory>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <Nullable>disable</Nullable>  
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Elsa.Designer.Components.Web" Version="2.14.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.1" />
+    <PackageReference Include="WalkingTec.Mvvm.Mvc" Version="8.1.12" />
+   <ProjectReference Include="..\TestSys.Client\TestSys.Client.csproj" />
+   <ProjectReference Include="..\TestSys.Shared\TestSys.Shared.csproj" />
+    <ProjectReference Include="..\TestSys.DataAccess\TestSys.DataAccess.csproj" />
+</ItemGroup>
+</Project>
+
